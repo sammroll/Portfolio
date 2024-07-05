@@ -1,0 +1,77 @@
+
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.logo {
+    height: 50px; /* Adjust the height as needed */
+    width: auto; /* Keeps the aspect ratio */
+}
+
+.headerImage {
+    height: 100px;
+    width: auto;
+}
+
+.bannerImg {
+    height: 100px;
+    width: 100%;
+    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.pastelNavBar {
+    background-color: #A882DD;
+}
+
+.imageNavBar {
+    background-image: url('../pics/pinksquares.jpg');
+}
+
+.active {
+    color: mediumpurple; /* Change this to the color you want for active links */
+    /* Add any other styles you want for active links */
+}
+
+.px-6 {
+    /*!important: This flag makes the CSS declaration more specific and overrides other declarations, 
+        even if they have higher specificity. It ensures that this padding rule is applied to the 
+        element regardless of other conflicting rules
+    
+        padding: 3rem !important;
+
+    */
+
+    padding-left:6em;
+    padding-right:6em;
+}
+
+.indent{
+    padding-left:8em;
+}
+
+.customImage{
+    height:20em;
+    width:20em;
+}
