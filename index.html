@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../public/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Playwrite+HR:wght@100..400&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+  <script src="../assets/js/main.js" defer></script>
+  <title>Home Page</title>
+</head>
+
+<body class="bg-[url(/assets/images/background.png)] bg-repeat page-home">
+  <!---------------------------- 
+  -         Nav Bar            -
+  ----------------------------->
+  <nav class="fixed top-0 left-0 w-full py-4 z-50">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-center">
+        <!-- Mobile menu button -->
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <button type="button" command="--toggle" commandfor="mobile-menu"
+            class="inline-flex items-center justify-center rounded-md p-2 text-gray-600 hover:bg-black/5">
+            <span class="sr-only">Open main menu</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"
+              class="size-6 in-aria-expanded:hidden">
+              <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"
+              class="size-6 not-in-aria-expanded:hidden">
+              <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Desktop -->
+        <div
+          class="hidden sm:flex items-center gap-2 rounded-full bg-[#EFE3DD] px-6 py-3 shadow-sm ring-1 ring-black/5">
+          <a href="/index.html" aria-current="page"
+            class="rounded-full px-4 py-2 text-sm font-medium text-black bg-[#ffe9de]">
+            Home
+          </a>
+          <a href="/pages/aboutMe.html" class="rounded-full px-4 py-2 text-sm font-medium text-black hover:bg-black/5">
+            About
+          </a>
+          <a href="/pages/experience.html"
+            class="rounded-full px-4 py-2 text-sm font-medium text-black hover:bg-black/5">
+            Experience
+          </a>
+          <a href="/pages/projects.html" class="rounded-full px-4 py-2 text-sm font-medium text-black hover:bg-black/5">
+            Projects
+          </a>
+          <a href="/pages/contact.html" class="rounded-full px-4 py-2 text-sm font-medium text-black hover:bg-black/5">
+            Contact
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile dropdown -->
+    <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+      <div class="mx-auto max-w-7xl px-4 pb-4">
+        <div class="mt-2 rounded-2xl bg-white p-2 shadow-sm ring-1 ring-black/5">
+          <a href="/index.html" aria-current="page"
+            class="block rounded-xl bg-[#ffe9de] px-4 py-3 text-base font-medium text-black">
+            Home
+          </a>
+          <a href="/pages/aboutMe.html"
+            class="block rounded-xl px-4 py-3 text-base font-medium text-black hover:bg-black/5">
+            About
+          </a>
+          <a href="/pages/experience.html"
+            class="block rounded-xl px-4 py-3 text-base font-medium text-black hover:bg-black/5">
+            Experience
+          </a>
+          <a href="/pages/projects.html"
+            class="block rounded-xl px-4 py-3 text-base font-medium text-black hover:bg-black/5">
+            Projects
+          </a>
+          <a href="/pages/contact.html"
+            class="block rounded-xl px-4 py-3 text-base font-medium text-black hover:bg-black/5">
+            Contact
+          </a>
+        </div>
+      </div>
+    </el-disclosure>
+  </nav>
+  <!---------------------------- 
+  -         Intro              -
+  ----------------------------->
+  <section class="section section--hero" id="home">
+    <div class="section-container">
+      <div class="section-content">
+        <p>Hi, welcome to my website. I’m</p>
+        <h1>Samantha Roldan</h1>
+        <p>Explore my projects and get to know more about me!</p>
+        <div class="flex gap-x-4">
+          <a class="btn" href="/pages/projects.html">View Projects <span aria-hidden="true">→</span></a>
+          <a class="btn" href="/pages/contact.html">Contact Me <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!---------------------------- 
+  -       Project Showcase     -
+  ----------------------------->
+  <section class="section section--featured" id="featured">
+    <div class="section-container">
+      <div class="projects-content">
+        <h1 class="projects-title">Featured Projects</h1>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <h2 class="project-title">Weather Alert System</h2>
+            <img class="project-media" src="/assets/images/weatherAppProject.png"
+              alt="Weather Alert System Preview" />
+            <p class="project-desc">
+              A real-time weather alert system that helps users stay informed
+              about severe weather conditions across the United States.
+            </p>
+            <div class="project-links">
+              <a class="btn" href="https://nws-sable.vercel.app/" target="_blank">Visit</a>
+              <a class="btn" href="https://github.com/sammroll/Weather-Alert-System" target="_blank">GitHub</a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <h2 class="project-title">Personal Website</h2>
+            <img class="project-media" src="/assets/images/personalWebsiteProject.png" alt="Personal Website" />
+            <p class="project-desc">A website made for fun!</p>
+            <div class="project-links">
+              <a class="btn" href="https://sammroll.github.io/PersonalWebsite/" target="_blank">Live</a>
+              <a class="btn" href="https://github.com/sammroll/PersonalWebsite/tree/main" target="_blank">GitHub</a>
+            </div>
+          </article>
+        </div>
+        <a class="btn" href="/pages/projects.html">View All Projects<span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-black/10 bg-[#EFE3DD]">
+    <div class="mx-auto max-w-7xl px-6 py-10">
+      <div class="flex flex-col items-center gap-6 sm:flex-row sm:justify-between">
+        <div class="text-center sm:text-left">
+          <p class="text-lg font-semibold">Samantha Roldan</p>
+          <p class="text-sm text-black/60">
+            Front-End Developer · Computer Science
+          </p>
+        </div>
+
+        <div class="flex gap-6 text-sm font-medium">
+          <a href="/pages/aboutMe.html" class="hover:underline">About</a>
+          <a href="/pages/experience.html" class="hover:underline">Experience</a>
+          <a href="/pages/projects.html" class="hover:underline">Projects</a>
+          <a href="/pages/contact.html" class="hover:underline">Contact</a>
+        </div>
+      </div>
+
+      <div class="mt-8 text-center text-xs text-black/50">
+        © <span id="year"></span> Samantha Roldan. All rights reserved.
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

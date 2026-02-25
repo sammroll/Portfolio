@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Playwrite+HR:wght@100..400&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+    <script src="../assets/js/main.js" defer></script>
+    <title>About Me</title>
+</head>
+
+<body class="bg-[url(/assets/images/background.png)] bg-repeat page-about">
+    <!---------------------------- 
+  -         Nav Bar            -
+  ----------------------------->
+    <nav class="fixed top-0 left-0 w-full py-4 z-50">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-center">
+                <!-- Mobile menu button  -->
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                    <button type="button" command="--toggle" commandfor="mobile-menu"
+                        class="inline-flex items-center justify-center rounded-md p-2 text-gray-600 hover:bg-black/5">
+                        <span class="sr-only">Open main menu</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"
+                            class="size-6 in-aria-expanded:hidden">
+                            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"
+                            class="size-6 not-in-aria-expanded:hidden">
+                            <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Desktop -->
+                <div
+                    class="hidden sm:flex items-center gap-2 rounded-full bg-[#EFE3DD] px-6 py-3 shadow-sm ring-1 ring-black/5">
+                    <a href="/index.html" aria-current="page"
+                        class="rounded-full px-4 py-2 text-sm font-medium text-black hover:bg-black/5">
+                        Home
+                    </a>
+                    <a href="/pages/aboutMe.html"
+                        class="rounded-full px-4 py-2 text-sm font-medium text-black bg-[#ffe9de]">
+                        About
+                    </a>
+                    <a href="/pages/experience.html"
+                        class="rounded-full px-4 py-2 text-sm font-medium text-black hover:bg-black/5">
+                        Experience
+                    </a>
+                    <a href="/pages/projects.html"
+                        class="rounded-full px-4 py-2 text-sm font-medium text-black hover:bg-black/5">
+                        Projects
+                    </a>
+                    <a href="/pages/contact.html"
+                        class="rounded-full px-4 py-2 text-sm font-medium text-black hover:bg-black/5">
+                        Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile dropdown -->
+        <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+            <div class="mx-auto max-w-7xl px-4 pb-4">
+                <div class="mt-2 rounded-2xl bg-white p-2 shadow-sm ring-1 ring-black/5">
+                    <a href="/index.html" aria-current="page"
+                        class="block rounded-xl px-4 py-3 text-base font-medium text-black">
+                        Home
+                    </a>
+                    <a href="/pages/aboutMe.html"
+                        class="block rounded-xl px-4 py-3 bg-[#ffe9de] text-base font-medium text-black hover:bg-black/5">
+                        About
+                    </a>
+                    <a href="/pages/experience.html"
+                        class="block rounded-xl px-4 py-3 text-base font-medium text-black hover:bg-black/5">
+                        Experience
+                    </a>
+                    <a href="/pages/projects.html"
+                        class="block rounded-xl px-4 py-3 text-base font-medium text-black hover:bg-black/5">
+                        Projects
+                    </a>
+                    <a href="/pages/contact.html"
+                        class="block rounded-xl px-4 py-3 text-base font-medium text-black hover:bg-black/5">
+                        Contact
+                    </a>
+                </div>
+            </div>
+        </el-disclosure>
+    </nav>
+
+    <!---------------------------- 
+  -         About Me            -
+  ----------------------------->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-content">
+                <div class="about-intro">
+                    <h1>About Me</h1>
+                    <p>I have a <span class="highlight">passion</span> for building websites and web applications that
+                        look good and work smoothly.
+                        I’m especially interested in <span class="highlight">front-end development</span>, where I
+                        combine <span class="soft">design</span>, <span class="soft">creativity</span>, and <span
+                            class="soft">problem-solving</span> to create a great user
+                        experience.
+                        I’m always learning new tools and technologies.
+                        I love turning ideas into <span class="highlight">real, functional projects</span> and building
+                        things that make a <span class="highlight">real impact</span>.</p>
+                </div>
+
+                <div class="about-edu">
+                    <h2>Education</h2>
+                    <h3>Bachelor of Computer Science</h3>
+                    <p>Elmhurst University<br>GPA: 3.6</p>
+                </div>
+
+                <div class="about-skills">
+                    <h2>Technical Skills</h2>
+                    <div class="about-pill-group">
+                        <p class="about-pill-title">Front End</p>
+                        <span class="about-pill">HTML</span>
+                        <span class="about-pill">CSS</span>
+                        <span class="about-pill">Tailwind</span>
+                        <span class="about-pill">React</span>
+                    </div>
+
+                    <div class="about-pill-group">
+                        <p class="about-pill-title">Languages</p>
+                        <span class="about-pill">JavaScript</span>
+                        <span class="about-pill">Java</span>
+                        <span class="about-pill">C++</span>
+                    </div>
+
+                    <div class="about-pill-group">
+                        <p class="about-pill-title">Tools</p>
+                        <span class="about-pill">Git</span>
+                        <span class="about-pill">Prisma</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-black/10 bg-[#EFE3DD]">
+        <div class="mx-auto max-w-7xl px-6 py-10">
+            <div class="flex flex-col items-center gap-6 sm:flex-row sm:justify-between">
+                <div class="text-center sm:text-left">
+                    <p class="text-lg font-semibold">Samantha Roldan</p>
+                    <p class="text-sm text-black/60">
+                        Front-End Developer · Computer Science
+                    </p>
+                </div>
+
+                <div class="flex gap-6 text-sm font-medium">
+                    <a href="/pages/aboutMe.html" class="hover:underline">About</a>
+                    <a href="/pages/experience.html" class="hover:underline">Experience</a>
+                    <a href="/pages/projects.html" class="hover:underline">Projects</a>
+                    <a href="/pages/contact.html" class="hover:underline">Contact</a>
+                </div>
+            </div>
+
+            <div class="mt-8 text-center text-xs text-black/50">
+                © <span id="year"></span> Samantha Roldan. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
