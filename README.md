@@ -8,7 +8,7 @@ I’m a recent Computer Science graduate focused on building responsive, user-fr
 
 This portfolio highlights my work, technical abilities, and commitment to growing in the field.
 
-**Live Website:** [Visit](https://samantharoldan.com/)
+**Live Website:** [Visit](https://samantharoldan.com/){:target="_blank"}
 
 ## Projects
 
