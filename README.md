@@ -1,4 +1,4 @@
-# Personal Portfolio
+# Portfolio
 
 This is my personal portfolio website, built to showcase my skills, projects, and growth as a **Front-End Developer**.
 
